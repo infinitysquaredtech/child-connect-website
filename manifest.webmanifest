@@ -1,0 +1,22 @@
+{
+  "name": "Child Connect",
+  "short_name": "Child Connect",
+  "description": "A unified platform supporting children through disability screening, secure records, and welfare scheme discovery.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/assets/logos/alpha-logo-100.webp",
+      "sizes": "100x100",
+      "type": "image/webp"
+    },
+    {
+      "src": "/assets/logos/alpha-logo-500.webp",
+      "sizes": "500x500",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Private and application paths
+Disallow: /login
+Disallow: /logout
+Disallow: /admin/
+Disallow: /user/
+Disallow: /super_admin/
+Disallow: /master_admin/
+Disallow: /parent_user/
+Disallow: /public/
+Disallow: /api/
+
+Sitemap: https://child-connect.in/sitemap.xml

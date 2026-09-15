@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page Not Found — Child Connect</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <meta
+            name="description"
+            content="The page you requested could not be found on Child Connect."
+        />
+        <meta name="theme-color" content="#0f172a" />
+        <link
+            rel="icon"
+            href="./assets/logos/icon-alpha.ico"
+            type="image/x-icon"
+        />
+        <link rel="preload" href="style.css" as="style" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            .error-page {
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 128px 24px 72px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .error-card {
+                width: min(100%, 820px);
+                padding: clamp(36px, 7vw, 72px);
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .error-card::before {
+                content: "";
+                position: absolute;
+                inset: -1px;
+                background:
+                    radial-gradient(
+                        circle at top left,
+                        rgba(129, 140, 248, 0.28),
+                        transparent 34%
+                    ),
+                    radial-gradient(
+                        circle at bottom right,
+                        rgba(236, 72, 153, 0.22),
+                        transparent 32%
+                    );
+                pointer-events: none;
+            }
+
+            .error-content {
+                position: relative;
+                z-index: 1;
+            }
+
+            .error-kicker {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                padding: 8px 18px;
+                margin-bottom: 22px;
+                color: var(--primary-300);
+                font-size: 0.82rem;
+                font-weight: 700;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+            }
+
+            .error-code {
+                font-size: clamp(5.5rem, 18vw, 11rem);
+                font-weight: 900;
+                line-height: 0.85;
+                letter-spacing: -0.08em;
+                margin-bottom: 28px;
+                background: linear-gradient(
+                    135deg,
+                    rgba(129, 140, 248, 0.98),
+                    rgba(236, 72, 153, 0.95)
+                );
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                filter: drop-shadow(0 18px 40px rgba(99, 102, 241, 0.22));
+            }
+
+            .error-title {
+                color: white;
+                font-size: clamp(2rem, 5vw, 3.4rem);
+                font-weight: 800;
+                line-height: 1.08;
+                letter-spacing: -0.04em;
+                margin-bottom: 18px;
+            }
+
+            .error-message {
+                max-width: 620px;
+                margin: 0 auto 32px;
+                color: var(--gray-400);
+                font-size: 1.08rem;
+                line-height: 1.75;
+            }
+
+            .error-actions {
+                display: flex;
+                justify-content: center;
+                gap: 14px;
+                flex-wrap: wrap;
+            }
+
+            .error-hint {
+                margin-top: 28px;
+                color: var(--gray-500);
+                font-size: 0.92rem;
+            }
+
+            @media (max-width: 640px) {
+                .error-page {
+                    padding: 112px 16px 48px;
+                }
+
+                .error-card {
+                    border-radius: var(--radius-md);
+                }
+
+                .error-actions .btn {
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg-blobs" aria-hidden="true">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="blob blob-4"></div>
+        </div>
+
+        <nav class="navbar scrolled" aria-label="Primary navigation">
+            <div class="container nav-container">
+                <a href="/" class="nav-logo" aria-label="Child Connect home">
+                    <img
+                        src="./assets/logos/alpha-logo-500.webp"
+                        alt="Child Connect Logo"
+                        class="logo-img"
+                    />
+                    <span class="logo-text">Child Connect</span>
+                </a>
+            </div>
+        </nav>
+
+        <main class="error-page">
+            <section class="glass-card error-card" aria-labelledby="error-title">
+                <div class="error-content">
+                    <p class="glass-subtle error-kicker">404 • Page not found</p>
+                    <div class="error-code" aria-hidden="true">404</div>
+                    <h1 class="error-title" id="error-title">
+                        This page wandered off.
+                    </h1>
+                    <p class="error-message">
+                        The page you requested does not exist, may have moved,
+                        or the link may be incorrect. Let’s get you back to a
+                        trusted Child Connect page.
+                    </p>
+                    <div class="error-actions" aria-label="404 actions">
+                        <a href="/" class="btn btn-primary btn-lg">
+                            Back to Home
+                        </a>
+                    </div>
+                    <p class="error-hint">
+                        If you typed the URL manually, please check the spelling
+                        and try again.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
