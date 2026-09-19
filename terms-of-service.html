@@ -300,6 +300,17 @@
                     </p>
 
                     <p>
+                        <strong>Email verification:</strong> To protect users and
+                        organisations, we verify email addresses with one-time
+                        codes. Public applications are accepted only after the
+                        contact address is verified, and sensitive actions such
+                        as changing contact details, deleting a child record, or
+                        approving an application require a fresh code. You must
+                        use an address you control, never another person's
+                        address, and never share a verification code with anyone.
+                    </p>
+
+                    <p>
                         <strong>For NGOs:</strong> Ensure that all data hosted
                         complies with applicable laws, privacy regulations, and
                         ethical standards. You are responsible for the security
@@ -396,6 +407,12 @@
                             staff/admins)
                         </li>
                         <li>
+                            <strong>Verification Data:</strong> Email address and
+                            one-time verification codes issued to confirm that
+                            you control that address. Codes are stored only as
+                            salted hashes and expire within minutes
+                        </li>
+                        <li>
                             <strong>Child Profile Data:</strong> Medical
                             history, disability details, family information,
                             education records (stored securely with NGO
@@ -438,6 +455,10 @@
                         <li>
                             To communicate with you regarding Platform features
                             and government scheme updates
+                        </li>
+                        <li>
+                            To verify your email address and confirm sensitive
+                            actions before they take effect
                         </li>
                         <li>
                             To ensure security and detect unauthorized access
@@ -810,7 +831,7 @@
         <script>
             // Exact date these Terms were last updated — update this constant
             // whenever the Terms are revised.
-            const LAST_UPDATED = "August 22, 2026";
+            const LAST_UPDATED = "September 19, 2026";
 
             document.getElementById("last-updated").textContent =
                 LAST_UPDATED;

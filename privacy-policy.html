@@ -131,6 +131,12 @@
                                 <strong>Super/Master Admins:</strong> Government
                                 identification, authorization credentials
                             </li>
+                            <li>
+                                <strong>Email Verification:</strong> One-time
+                                codes sent to your email address to confirm you
+                                control it. Codes are stored as salted hashes
+                                with a short expiry, never in plain text
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -266,6 +272,12 @@
                         </li>
                         <li>Deliver government scheme notifications</li>
                         <li>Conduct disability screenings and assessments</li>
+                        <li>
+                            Verify your email address with a one-time code, and
+                            require a fresh code before sensitive actions such as
+                            changing contact details, deleting a child record, or
+                            approving an application
+                        </li>
                     </ul>
                 </div>
 
@@ -472,6 +484,17 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="info-box">
+                    <h4>Email verification codes</h4>
+                    <p>
+                        One-time verification codes are short-lived by design:
+                        each code expires within minutes (or as soon as it is
+                        used) and is deleted from our systems afterwards. Only a
+                        salted hash of each code is stored, so the record itself
+                        cannot be used to verify an address.
+                    </p>
                 </div>
             </section>
 
@@ -1031,7 +1054,7 @@
         <script>
             // Exact date this policy was last updated — update this constant
             // whenever the policy is revised.
-            const LAST_UPDATED = "August 22, 2026";
+            const LAST_UPDATED = "September 19, 2026";
 
             document.getElementById("last-updated").textContent =
                 LAST_UPDATED;
